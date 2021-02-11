@@ -5,4 +5,4 @@ on:
       jobs:
         description: 'Jobs'
         required: true
-jobs: ${{ github.event.inputs.jobs }}
+jobs: '<${{ github.event.inputs.jobs }}>'
