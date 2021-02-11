@@ -1,0 +1,10 @@
+name: Trigger jobs
+on:
+  push: ~
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: 'Component/Version'
+        required: true
+jobs:
+  ${{ github.event.inputs.jobs }}
