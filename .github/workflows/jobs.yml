@@ -1,5 +1,5 @@
 name: "Trigger jobs"
-true: 
+on: 
   workflow_dispatch: 
     inputs: 
       jobs: 
