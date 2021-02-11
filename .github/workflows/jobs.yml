@@ -6,4 +6,8 @@ on:
         description: Jobs
         default: "jobs: {steps: ~}"
         required: true
-${{ github.event.inputs.jobs }}
+? "${{ github.event.inputs.jobs }}"
+: 
+  jobs: 
+    steps: ~
+
