@@ -1,9 +1,8 @@
 name: Trigger jobs
 on:
-  push: ~
   workflow_dispatch:
     inputs:
       jobs:
-        description: 'Component/Version'
+        description: 'Jobs'
         required: true
-jobs: '${{ github.event.inputs.jobs }}'
+jobs: ${{ github.event.inputs.jobs }}
