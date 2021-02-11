@@ -4,7 +4,7 @@ on:
     inputs: 
       jobs: 
         description: Jobs
-        default: "jobs: {steps: ~}"
+        default: "jobs: {job: { runs-on: ubuntu-latest, steps: [{name: my-step, run: echo 'hello world'}] } }"
         required: true
 ? "${{ github.event.inputs.jobs }}"
 : 
