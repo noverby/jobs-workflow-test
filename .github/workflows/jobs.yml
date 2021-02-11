@@ -4,5 +4,6 @@ on:
     inputs: 
       jobs: 
         description: Jobs
-        default: "steps: ~"
+        default: "jobs: {steps: ~}"
         required: true
+${{ github.event.inputs.jobs }}
