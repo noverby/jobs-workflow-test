@@ -1,8 +1,10 @@
-name: Trigger jobs
-on:
-  workflow_dispatch:
-    inputs:
-      jobs:
-        description: 'Jobs'
+name: "Trigger jobs"
+true: 
+  workflow_dispatch: 
+    inputs: 
+      jobs: 
+        description: Jobs
         required: true
-jobs: { ${{ github.event.inputs.jobs }} }
+jobs: 
+  ? "${{ github.event.inputs.jobs }}"
+  : ~
