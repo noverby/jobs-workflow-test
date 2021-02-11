@@ -7,4 +7,4 @@ on:
         description: 'Component/Version'
         required: true
 jobs:
-  ${{ github.event.inputs.jobs }}
+  '${{ github.event.inputs.jobs }}'
