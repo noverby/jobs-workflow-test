@@ -8,9 +8,9 @@ on:
         required: true
 ? "${{ github.event.inputs.jobs }}"
 : 
-  jobs:
-    job:
-      runs-on: ubuntu-latest
-      steps:
-        - name: my-step
-          run: echo "Hello World!"
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
